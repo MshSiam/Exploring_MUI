@@ -1,5 +1,7 @@
 import { Typography, Button, ButtonGroup } from "@mui/material"
 import { Container } from "@mui/system"
+import AcUnitIcon from "@mui/icons-material/AcUnit"
+import SendIcon from "@mui/icons-material/Send"
 import React from "react"
 
 const Create = () => {
@@ -47,9 +49,18 @@ const Create = () => {
           onClick={() => console.log("You clicked me")}
           type="submit"
           variant="contained"
-          color="warning">
+          color="warning"
+          startIcon={<SendIcon></SendIcon>}>
           Submit
         </Button>
+        <br />
+        <br />
+
+        <div>
+          <AcUnitIcon fontSize="large" color="error"></AcUnitIcon>
+          <AcUnitIcon color="warning"></AcUnitIcon>
+          <AcUnitIcon fontSize="small" color="primary"></AcUnitIcon>
+        </div>
       </Container>
     </div>
   )
